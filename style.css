@@ -1,0 +1,185 @@
+:root {
+  --morado: #c744e7;
+  --amarillo: #ffee00;
+  --verde: #44e752;
+  --rojo: #e74444;
+  --azul: #4498e7;
+  --blanco: #ffffff;
+  --oscuro: #000000;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+body {
+  background-color: #c744e7;
+}
+
+img {
+  max-width: 100%;
+  
+}
+
+.contenedor {
+  max-width: 120rem;
+  margin: 0 auto;
+  width: 95%;
+  color: #a138a4; /*  color de las letras */
+}
+
+/** Sección de header **/
+.contenido {
+  align-content: center;
+  justify-content: center;
+  background-color: #ccffcc;
+  padding: 0.5rem;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.texto-titulo {
+  text-align: center;
+  
+}
+
+.texto-titulo .bienvenida {
+  color: var(--oscuro);
+  font-size: 4rem;
+  font-family: 'Darumadrop One', cursive;
+  font-family: 'Handlee', cursive;
+  font-family: 'Pacifico', cursive;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.texto-titulo .titulo {
+  color: var(--morado);
+  font-size: 6rem;
+  font-family: 'Darumadrop One', cursive;
+  font-family: 'Handlee', cursive;
+  font-family: 'Mogra', cursive;
+  font-family: 'Pacifico', cursive;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+/** Sección de helados **/
+
+.menu {
+  margin-top: 4rem;
+  
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 2rem;
+}
+
+.texto-menu {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.botones {
+  display: inline-block;
+  flex-direction: column;
+}
+
+.btn {
+  text-decoration: none;
+  color: var(--blanco);
+  font-size: 1.5rem;
+  padding: 1rem 5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  margin: 0.5rem;
+}
+
+.botones .total {
+  background-color: var(--verde);
+}
+
+.botones .limpiar {
+  background-color: var(--azul);
+}
+
+.helados {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+.card {
+  width: 330px;
+  height: 360px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 2rem 1rem 0 0;
+  text-align: center;
+  transition: all 0.2s;
+  padding: 1rem;
+  background-color:  #8a8a8866;
+}
+
+.card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+  background-color: #b288c7e3;
+}
+
+.card .images {
+  width: 330px;
+  height: 220px;
+  
+}
+
+.card .titulo {
+  padding-top: 1rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.card .precio {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card .texto-precio {
+  padding: 1rem 0;
+  font-weight: bold;
+}
+
+.card .btn-agregar {
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bolder;
+  border: none;
+  background-color: #5dade2;
+  color: #000000;
+  cursor: pointer;
+}
+
+.carrito-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #000000;
+  
+}
+
+.producto-seleccionado {
+  background-color: #e1c0e9;
+}
+
+.total {
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
