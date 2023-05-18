@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Helados Eshka</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" >
+
+    <!-- icono de la página -->
+    <link rel="icon" href="img/helado.JPG">
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Handlee&family=Pacifico&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Handlee&family=Mogra&family=Pacifico&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  
+  </head>
+
+  <body>
+    <div class="contenido">
+      <div class="contenedor-titulo contenedor">
+        <div class="texto-titulo">
+          <p class="bienvenida">¡ Bienvenidos a !</p>
+          <h1 class="titulo">✨Helados Eshka✨ </h1>
+        </div>
+      </div>
+
+      <!-- Contenedor de helados -->
+      <section class="menucontenedor">
+        <h3 class="texto-menu">Menú</h3>
+
+        <div class="grid">
+          <!-- Cargando helados -->
+          <div id="items" class="helados"></div>
+
+          <!-- Contenedor de la nota de venta -->
+          <div class="producto-seleccionado">
+            <h2>Carrito</h2>
+            <ul id="carrito"></ul>
+            <hr />
+          </div>
+          <div class="botones">
+            <button id="boton-comprar" class="total btn">Comprar</button>
+            <button id="boton-vaciar" class="limpiar btn">Limpiar</button>
+          </div>
+          <div class="total">
+            <p>I.V.A. &#36; <span id="iva"></span></p>
+            <p>Subtotal: &#36; <span id="subtotal"></span></p>
+            <p>Total: &#36; <span id="total"></span></p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
